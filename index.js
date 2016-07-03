@@ -104,7 +104,6 @@ bot.on('message', function(user, userID, channelID, message, rawEvent) {
 		else if (!id) chat(channelID, '<@'+userID+'> couldn\'t find '+name+' in the room so he hugs himself!');
 		else if (id == userID) chat(channelID, '<@'+userID+'> gives himself a big warm hug!');
 		else if (id == bot.id) chat(channelID, 'I wuv you too, <@'+userID+'>');
-		else if (id == 'everyone') chat(channelID, 'GROUP HUG with <@everyone>!')
 		else chat(channelID, '<@'+userID+'> hugs <@'+id+'>!');
 	} else if (message.match(/!joined .+/)) {
 		var match = message.match(/!joined (.+)/);
